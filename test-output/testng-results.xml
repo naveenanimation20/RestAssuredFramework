@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4697" started-at="2018-01-24T17:48:12Z" finished-at="2018-01-24T17:48:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4697" started-at="2018-01-24T17:48:12Z" finished-at="2018-01-24T17:48:17Z">
+      <class name="com.qa.tests.WeatherInfoTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="4" started-at="2018-01-24T23:18:12Z" finished-at="2018-01-24T23:18:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getWeatherDetailsWithCorrectCityNameTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="getWeatherDetailsWithCorrectCityNameTest" duration-ms="2269" started-at="2018-01-24T23:18:12Z" data-provider="getData" finished-at="2018-01-24T23:18:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[75 Percent]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[13.123 Degree celsius]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[clear sky]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.35 Km per hour]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[114.5 Degree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherDetailsWithCorrectCityNameTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="0" started-at="2018-01-24T23:18:15Z" finished-at="2018-01-24T23:18:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="getWeatherDetailsWithCorrectCityNameTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="getWeatherDetailsWithCorrectCityNameTest" duration-ms="798" started-at="2018-01-24T23:18:15Z" data-provider="getData" finished-at="2018-01-24T23:18:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[82 Percent]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[21.18 Degree celsius]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[few clouds]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2.1 Km per hour]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[100 Degree]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [21.18 Degree celsius] but found [20.94 Degree celsius]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [21.18 Degree celsius] but found [20.94 Degree celsius]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.qa.tests.WeatherInfoTests.getWeatherDetailsWithCorrectCityNameTest(WeatherInfoTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherDetailsWithCorrectCityNameTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="0" started-at="2018-01-24T23:18:16Z" finished-at="2018-01-24T23:18:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="getWeatherDetailsWithCorrectCityNameTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.WeatherInfoTests@59fa1d9b]" name="getWeatherDetailsWithCorrectCityNameTest" duration-ms="1071" started-at="2018-01-24T23:18:16Z" data-provider="getData" finished-at="2018-01-24T23:18:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New Delhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[82 Percent]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[21.18 Degree celsius]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[few clouds]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2.1 Km per hour]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[100 Degree]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [21.18 Degree celsius] but found [11 Degree celsius]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [21.18 Degree celsius] but found [11 Degree celsius]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.qa.tests.WeatherInfoTests.getWeatherDetailsWithCorrectCityNameTest(WeatherInfoTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherDetailsWithCorrectCityNameTest -->
+      </class> <!-- com.qa.tests.WeatherInfoTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
