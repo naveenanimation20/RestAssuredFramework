@@ -24,7 +24,7 @@ public class TestUtil {
 	public static String TESTDATA_SHEET_PATH = "/Users/NaveenKhunteta/Documents/workspace/"
 			+ "RestAPIRestAssuredFW/src/main/java/com/qa/testdata/APITestData.xlsx";
 	
-
+//get data from excel:
 	public static Object[][] getDataFromSheet(String sheetName){
 		FileInputStream file = null;
 		try {
